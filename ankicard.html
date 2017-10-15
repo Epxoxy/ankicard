@@ -1,0 +1,399 @@
+﻿<html>
+<head>
+<style>
+/* shadow depth */
+.z-depth-0 {
+	-webkit-box-shadow:none !important;
+	box-shadow:none !important
+}
+.z-depth-1 {
+	-webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+	box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2)
+}
+.z-depth-1-half{
+	-webkit-box-shadow:0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+	box-shadow:0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2)
+}
+.z-depth-2 {
+	-webkit-box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
+	box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3)
+}
+.z-depth-3 {
+	-webkit-box-shadow:0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.3);
+	box-shadow:0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.3)
+}
+.z-depth-4 {
+	-webkit-box-shadow:0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3);
+	box-shadow:0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3)
+}
+.z-depth-5 {
+	-webkit-box-shadow:0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.3);
+	box-shadow:0 16px 24px 2px rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.3)
+}
+.shadowDepth1 {
+   box-shadow: 
+  		0 1px 3px rgba(0,0,0, 0.12),
+    	0 1px 2px rgba(0,0,0, 0.24);      
+}
+.highlight{
+	color:#1191D9;
+	border-bottom:1px dotted #72c8e1;
+}
+.card {
+	font-family:Noto Sans CJK JP Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:50px;
+	text-align:center;
+	color:black;
+	background:url("Seamless-Polygon-Backgrounds-Vol.jpg");
+	-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;
+}
+.android .card {
+	font-family:Noto Sans CJK JP Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:30px;
+	text-align:center;
+	color:black;
+	background:url("Seamless-Polygon-Backgrounds-Vol.jpg");
+	-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;
+}
+.frontbg {
+	background-color:#18adab;
+	border-radius:7px;
+	color:#fff;
+	position:relative;
+	left:0;
+}
+.engdefbg {
+	font-family:Raleway;
+	font-style:italic;
+	padding:15px;
+	margin-left:-5px;
+	margin-top:-15px;
+	color:#18adab;
+	font-size:15px;
+}
+.android .engdefbg {
+	font-family:Raleway;
+	font-style:italic;
+	padding:15px;
+	margin-left:-15px;
+	margin-top:-20px;
+	color:#18adab;
+	font-size:10px;
+}
+.wordtype{
+	color:#18adab;
+	font-size:0.5em;
+	font-weight:bold;
+}
+.others {
+	position:relative;
+	top:15px;
+	border:1px dotted #72c8e1;
+	color:#18adab;
+	font-size:20px;
+	width:auto;
+	padding-top:15px;
+	padding-left:20px;
+	padding-bottom:15px;
+	padding-right:20px;
+	margin-bottom:35px;
+}
+.android .others {
+	position:relative;
+	top:10px;
+	border:1px dotted #72c8e1;
+	color:#18adab;
+	font-size:17px;
+	width:auto;
+	padding-top:8px;
+	padding-left:15px;
+	padding-bottom:8px;
+	padding-right:15px;
+	margin-bottom:20px;
+}
+.sentence {
+	font-size:25px;
+	margin-top:5px;/*-20px*/
+	margin-bottom:5px;
+}
+.android .sentence {
+	font-size:17px;
+	margin-top:5px;/*-15px*/
+}
+.backbg {
+	position:relative;
+	top:0px;/*-3*/
+	background-color:#fff;
+	padding:15px;
+	padding-bottom:15px;
+	padding-left:30px;
+	padding-right:30px;
+	border-radius:0px 0px 7px 7px;
+	color:#016ea6;
+	font-size:28px;
+	text-align:left;
+}
+.android .backbg {
+	position:relative;
+	top:-5px;
+	background-color:#fff;
+	padding:15px;
+	padding-bottom:15px;
+	padding-left:15px;
+	padding-right:15px;
+	border-radius:0px 0px 10px 10px;
+	color:#016ea6;
+	font-size:20px;
+	text-align:left;
+}
+.hira {
+	font-size:25px;
+	line-height:5px;
+	padding-bottom:40px;
+}
+.android .hira {
+	font-size:18px;
+	line-height:5px;
+	padding-bottom:25px;
+}
+hr {
+	height:2px;
+	font-size:30px;
+	border:0;
+	background:#72c8e1;
+}
+u {
+	text-decoration:none;
+	border-bottom:1px dotted;
+}
+.win .jp {
+	font-family:"MS Mincho","ＭＳ 明朝";
+}
+.mac .jp {
+	font-family:"Hiragino Mincho Pro","ヒラギノ明朝 Pro";
+}
+.linux .jp {
+	font-family:"Kochi Mincho","東風明朝";
+}
+.mobile .jp {
+	font-family:"Hiragino Mincho ProN";
+}
+/* This line is Added by Cloze Furigana Tools to make its various features work. CFT.260.00*/.hidden {
+	visibility:hidden;
+	font-size:0;
+}
+.hidden .cloze,.cloze .hidden {
+	visibility:visible;
+	background-color:white;
+	font-size:0.8rem;
+}
+@-moz-document url-prefix() {
+	ruby {
+	position:relative;
+	display:inline-block;
+	}
+	ruby rt {
+		position:absolute;
+		display:block;
+		font-size:0.5em;
+		left:-50%;
+		bottom:115%;
+		width:210%;
+		padding:0;
+		text-align:center;
+		line-height:1em
+	}
+}
+.hidden .basemaru {
+	position:relative;
+}
+.hidden .basemaru:after {
+	content:"◯";
+	visibility:visible;
+	position:absolute;
+	left:0;
+}
+.hidden .cloze .basemaru:after,.cloze .hidden .basemaru:after {
+	visibility:hidden;
+}
+div {
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+	/*line-height:2em;*/
+}
+.cloze_container .hidden {
+	visibility:visible;
+	background-color:white;
+}
+</style>
+</head>
+<body class="card" style="padding:50px">
+<!-- Front Template -->
+<div class='frontbg jp z-depth-1'>{{kanji:Expression}}</div>
+<!-- This line is Added by Cloze Furigana Tools to make its various features work. CFT.260.00 -->
+<script>
+  var rubys = document.getElementsByTagName('ruby');
+  var spans = document.getElementsByTagName('span');
+  for (var i = 0; i < rubys.length; i++) {
+    for (var s = 0; s < spans.length; s++) {
+      if (spans[s].className === "cloze" && rubys[i].contains(spans[s])) {
+        rubys[i].className = "cloze_container";
+        break;
+      }
+    }
+  }
+</script>
+
+<!-- ingore -->
+<div style="margin:50px;"></div>
+
+<!-- Back Template -->
+<div id='exp' class='frontbg jp z-depth-5'>{{kanji:Expression}}</div>
+<div class="backbg">
+<div class="wordtype">[{{Word Type}}]</div>
+<div class="defbg">{{Definition}}</div>
+{{#Sentence(s)}}<div class="sentence">{{furigana:Sentence(s)}}</div>{{/Sentence(s)}} 
+{{#Other(s)}}<div class="others ">{{Other(s)}}</div>{{/Other(s)}}
+<!-- This line is Added by Cloze Furigana Tools to make its various features work. CFT.260.00 -->
+<script>
+    var Wrapper = {
+    createNew: function() {
+        var obj = {};
+        obj.element = null;
+        obj.index = -1;
+        obj.text = null;
+        obj.extra = 0;
+        return obj;
+    }
+}
+function newWrapper(element, index, text, extra) {
+    var wrapper = Wrapper.createNew();
+    wrapper.element = element;
+    wrapper.index = index;
+    wrapper.text = text;
+    wrapper.extra = extra;
+    return wrapper;
+}
+function getRootNodes(element, excludeTag) {
+    var rs = [];
+    var nodes = element.childNodes;
+    for (var i = 0,
+    j = 0; i < nodes.length; i++) {
+        var node = nodes[i];
+        if (node.tagName && node.tagName == excludeTag) {
+            //console.log(node.tagName);
+            continue;
+        }
+        if (node.childNodes.length > 0) {
+            var next = getRootNodes(node, excludeTag);
+            for (var k = 0; k < next.length; k++) {
+                rs[j++] = next[k];
+            }
+        } else {
+            rs[j++] = node;
+        }
+    }
+    return rs;
+}
+function wrapAs(oldNode, tagName, init) {
+    var newNode = document.createElement(tagName);
+    init(newNode);
+    oldNode.parentNode.replaceChild(newNode, oldNode);
+}
+function wrapKwToClassImpl(node,keyword,className,excludeTag) {
+    var wrappers = [];
+    var wi = 0;
+    var size = 0;
+    var holeText = "";
+    var objs = getRootNodes(node, excludeTag);
+    Array.prototype.forEach.call(objs, function(obj) {
+        var si = size;
+        size += obj.data.length;
+        wrappers[wi++] = newWrapper(obj, si, obj.data, size);
+    });
+    Array.prototype.forEach.call(wrappers,
+    function(wrapper) {
+        holeText += wrapper.text;
+    });
+    //console.log(holeText);
+    var index = -1;
+    do{
+        index = holeText.indexOf(keyword, index+1);
+        console.log(index);
+        if(index <0) break;
+        var targets = [];
+        for (var i = 0, j = 0; i < wrappers.length; i++) {
+            if (wrappers[i].index < index) {
+                continue;
+            } else if (j <= keyword.length) {
+                j += wrappers[i].text.length;
+                targets[targets.length] = wrappers[i];
+            }
+        }
+        Array.prototype.forEach.call(targets,
+        function(target, i, arr) {
+            var text = target.text;
+            var element = target.element;
+            if (i == 0 /*&& target.index!=index*/ ) {
+                //TODO check
+                var starti = index - target.index;
+                var sp = text.substring(0, starti);
+                var ep = text.substring(starti);
+                //console.log(starti+" "+sp+","+ep);
+                wrapAs(element, "span", function(e) {
+                    var wrappart = "<span class='"+className+"'>" + ep + "</span>";
+                    e.innerHTML = sp + wrappart;
+                })
+            } else if (i == arr.length - 1) {
+                //TODO check
+                var starti = text.length - target.extra + index + keyword.length;
+                var sp = text.substring(0, starti);
+                var ep = text.substring(starti);
+                //console.log(starti+" "+sp+","+ep);
+                wrapAs(element, "span", function(e) {
+                    var wrappart = "<span class='"+className+"'>" + sp + "</span>";
+                    e.innerHTML = wrappart + ep;
+                })
+            } else {
+                wrapAs(element, "span", function(e) {
+                    e.className = className;
+                    e.innerHTML = text;
+                })
+            }
+        });
+    }while(index >= 0);
+}
+function wrapKwToClass(id,keyword,className) {
+    wrapKwToClassImpl(document.getElementById(id),keyword,className,"RT");
+}
+function wrapKwToClassForNode(node,keyword,className) {
+    wrapKwToClassImpl(node,keyword,className,"RT");
+}
+//userless start
+var regAllTags = new RegExp("<.+?>", "gm");
+var regAllRts = new RegExp("<rt.+?rt>", "gm");
+String.prototype.replaceAll = function(s1, s2) {
+    return this.replace(new RegExp(s1, "gm"), s2);
+}
+//main code start
+    var exp = document.getElementById("exp");
+    if(exp.innerHTML.indexOf('rt')>=0){
+         exp.style.paddingTop="0.9em";
+   }
+    var sentences = document.getElementsByClassName("sentence");
+    for(var i=0;i<sentences.length;i++){
+        wrapKwToClassForNode(sentences[i],'{{kanji:Expression}}','highlight');
+    }
+    var rubys = document.getElementsByTagName('ruby');
+    var spans = document.getElementsByTagName('span');
+    for (var i = 0; i < rubys.length; i++) {
+      for (var s = 0; s < spans.length; s++) {
+        if (spans[s].className === "cloze" && rubys[i].contains(spans[s])) {
+          rubys[i].className = "cloze_container";
+          break;
+        }
+      }
+    }
+</script>
+</body>
+</html>
